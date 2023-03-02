@@ -13,6 +13,12 @@
 
 :root {
   --PageBG: #191825;
+  --c1: #F7C8E0;
+  --c2: #3A98B9;
+  --c3: #DFFFD8;
+  --c4: #E384FF;
+  --c5: #865DFF;
+  --c6: #DC8449;
 }
 
 html {
@@ -269,4 +275,17 @@ textarea {
 .body {
   height: 100vh;
   background: var(--PageBG);
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  scroll-snap-type: y mandatory;
+}
+
+.section {
+  height: 100vh;
+  scroll-snap-align: start;
+  background: var(--c1);
 }
